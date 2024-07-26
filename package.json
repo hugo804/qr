@@ -1,0 +1,17 @@
+{
+    "name": "my-qr-code-project",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "postinstall": "prisma generate"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "@prisma/client": "^2.0.0"
+    },
+    "devDependencies": {
+      "prisma": "^2.0.0"
+    }
+  }
+  

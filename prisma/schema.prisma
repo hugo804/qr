@@ -1,0 +1,14 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model QRCode {
+  id        Int      @id @default(autoincrement())
+  qrCode    String   @unique
+  createdAt DateTime @default(now())
+}
