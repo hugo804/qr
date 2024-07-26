@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 
 app.use(express.json());
 
-app.post('/leitura', async (req, res) => {
+app.post('/leituray', async (req, res) => {
   const { qrCode } = req.body;
 
   try {
